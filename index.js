@@ -27,12 +27,12 @@ function handleButtons(event) {
             opr2 = null;
            update(opr1);
         }
-        else if (operator = '=') {operator = null}
         operator = buttonPressed.textContent;
     }
     else if (buttonPressed.className == 'number') {
-        if (opr1 == null && operator == null) {
+        if ((opr1 == null && operator == null) || operator == '=') {
             opr1 = +buttonPressed.textContent;
+            operator = null;   // allows number input after = to restart calculator
             update(opr1);
         }
         else if (opr1 != null && operator == null) {
