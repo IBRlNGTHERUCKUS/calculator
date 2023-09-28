@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll('button');
 for (let button of buttons) {
     button.addEventListener('click', handleButtons);
 }
-const output = document.querySelector('.output');
+const screen = document.querySelector('.screen');
 let opr1, opr2, operator;
 
 function compute(operand1, operator, operand2) {
@@ -13,7 +13,7 @@ function compute(operand1, operator, operand2) {
 }
 
 function update(out) {
-    output.textContent = out;
+    screen.textContent = out;
 }
 update(0);
 
