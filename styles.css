@@ -28,7 +28,7 @@ header {
     width: 78mm;
     border: #521bb2 solid 3px;
     background-image: url('images/background.jpg'); 
-    border-radius: 13px 13px 30px 13px;
+    border-radius: 5px 5px 30px 5px;
 }
 
 .output, .buttons {
@@ -68,4 +68,12 @@ header {
 button {
     flex: 1;
     border-radius: 4px;
+}
+button.operator:hover,
+button.ac:hover,
+button.negative:hover {
+    background: orange;
+}
+button.number:hover {
+    background:rgb(199, 192, 192);
 }
