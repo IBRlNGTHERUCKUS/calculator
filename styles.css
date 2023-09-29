@@ -75,6 +75,7 @@ button.operator:focus,
 button.ac:hover,
 button.negative:hover {
     background: orange;
+    cursor: pointer;
 }
 button.number:hover {
     background:rgb(199, 192, 192);
