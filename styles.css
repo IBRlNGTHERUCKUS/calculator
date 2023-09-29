@@ -68,8 +68,10 @@ header {
 button {
     flex: 1;
     border-radius: 4px;
+    box-shadow: gray;
 }
 button.operator:hover,
+button.operator:focus,
 button.ac:hover,
 button.negative:hover {
     background: orange;

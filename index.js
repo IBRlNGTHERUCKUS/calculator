@@ -9,7 +9,7 @@ function compute(operand1, operator, operand2) {
     if (operator == '+') {return operand1 + operand2;}
     else if (operator == '-') {return operand1 - operand2}
     else if (operator == '*') {return operand1 * operand2}
-    else if (operator == '/') {return operand2 != 0 ? (operand1 / operand2) : "error"}
+    else if (operator == '%') {return operand2 != 0 ? (operand1 % operand2) : "error"}
 }
 
 function update(out) {
