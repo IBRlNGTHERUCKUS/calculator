@@ -9,6 +9,7 @@ function compute(operand1, operator, operand2) {
     if (operator == '+') {return operand1 + operand2;}
     else if (operator == '-') {return operand1 - operand2}
     else if (operator == '*') {return operand1 * operand2}
+    else if (operator == '/') {return operand2 != 0 ? (operand1 / operand2) : "error"}
     else if (operator == '%') {return operand2 != 0 ? (operand1 % operand2) : "error"}
 }
 
@@ -23,7 +24,7 @@ function handleButtons(event) {
 
     if (buttonPressed.classList[0] == 'operator') {
         // complete last operation and update screen (non-first run)
-        if (opr1 && operator && opr2) {
+        if (opr1 != null && operator && opr2 != null) {
             opr1 = compute(+opr1, operator, +opr2);
             opr2 = null;
            update(opr1);
